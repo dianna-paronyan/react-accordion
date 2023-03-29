@@ -15,10 +15,6 @@ body{
     flex-direction: column;
     margin-top: 150px;
 }
-
-.content{
-   
-}
 .row{
     width: 500px;
     height: 60px;
