@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from 'react'
+import { Routes,Route, useParams } from 'react-router-dom'
+import Countries from './Countries'
 
 function App() {
 
   return (
-    <div className="App">
-      
-    </div>
+    <Routes>
+      <Route path='/countries' element={<Countries />} />
+    </Routes>
   )
 }
 
