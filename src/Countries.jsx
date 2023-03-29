@@ -8,7 +8,7 @@ class Countries extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3001/countries")
+    fetch("http://localhost:3001")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
