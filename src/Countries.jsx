@@ -5,6 +5,7 @@ class Countries extends Component {
   state = {
     countries: [],
     isActive: false,
+    numCountries: 5,
   };
 
   componentDidMount() {
@@ -27,7 +28,7 @@ class Countries extends Component {
   render() {
     return (
       <div className="box">
-        {this.state.countries?.map((country) => {
+        {this.state.countries?.slice(0, this.state.numCountries).map((country) => {
           return (
             <div key={country.name} className="content">
               <div className="row">
@@ -51,6 +52,7 @@ class Countries extends Component {
             </div>
           );
         })}
+        <button  onClick={() => this.setState({ numCountries: this.state.numCountries + 5 })} className='see_more_btn'>See more</button>
       </div>
     );
   }
