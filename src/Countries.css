@@ -16,7 +16,7 @@ body{
     margin-top: 150px;
 }
 .row{
-    width: 500px;
+    width: 550px;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ body{
 }
 
 .capital_box{
-    width: 500px;
+    width: 550px;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -53,4 +53,11 @@ body{
 .btn{
     width: 35px;
     height: 27px;
+    cursor: pointer;
+}
+.see_more_btn{
+    width: 80px;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
 }
